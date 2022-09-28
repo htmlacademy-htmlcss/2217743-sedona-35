@@ -100,7 +100,27 @@
       <section class="interest-block">
         <h2 class="question">Заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <a>поиск гостиницы в седоне</a>
+        <button>поиск гостиницы в седоне</button>
+      </section>
+      <section class="modal-window">
+        <h2 class="modal-window-h2">поиск гостиницы в седоне</h2>
+        <button class="close-modal-window"></button>
+        <p>
+          <label for="date-in">Дата Заезда:</label>
+          <input type="date" id="date-in" name="date-in">
+        </p>
+        <p>
+          <label for="date-out">Дата Выезда:</label>
+          <input type="date" id="date-out" name="date-out">
+        </p>
+        <p>
+          <label for="set-adults">Взрослые:</label>
+          <input type="text" id="set-adults" name="set-adults" value="1" min="1">
+        </p>
+        <p>
+          <label for="set-child">Дети</label>  <!-- Доделать модальное окно -->
+          <input type="text" id="set-child" name="set-child" value="0" min="0">
+        </p>
       </section>
       <aside class="aside-background">
         <section class="mailing">
