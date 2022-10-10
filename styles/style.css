@@ -44,3 +44,190 @@ body {
   background-repeat: no-repeat;
   background-size: 100% auto;
 }
+
+.navigation-btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: white;
+  text-transform: uppercase;
+  background-color: #756157;
+  border: none;
+  text-align: center;
+}
+
+.definition h1 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.definition p {
+  color: #333333;
+  text-align: center;
+}
+
+.features-list {
+  list-style: none;
+  display: flex;
+}
+
+.features-photo {
+  display: flex;
+}
+
+.features-item {
+  background-color: #82B3D3;
+}
+
+.features-item h2 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.features-item p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.features-list li:nth-child(2) {
+  background-color: #83B3D333;
+}
+
+.features-list h2 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.features-list p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #333333;
+}
+
+.item-block {
+  background-color: #83B3D31F;
+}
+
+.productions-items li:first-child {
+  background-image: url(../images/mainHome.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.productions-items li:nth-child(2) {
+  background-image: url(../images/food.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.productions-items li:nth-child(3) {
+  background-image: url(../images/giftBox.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+.productions ul {
+  display: flex;
+  list-style: none;
+}
+
+.productions h2 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.productions p {
+  color: #333333;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+}
+
+
+.question {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.interest-block p {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #333333;
+}
+
+.btn-modal-window {
+  background-color: #756157;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  border: none;
+}
+
+.aside-main {
+  background-image: url(../images/Subscribe.jpg);
+  background-repeat: no-repeat;
+  color: white;
+  text-align: center;
+}
+
+.mailing h2 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.mailing p {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.button {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  background-color: #82B3D3;
+  border: none;
+  border-radius: 0 4px 4px 0;
+}
+
+.phone {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  color: black;
+  text-decoration: none;
+}
