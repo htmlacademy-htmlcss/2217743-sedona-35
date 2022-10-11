@@ -15,6 +15,8 @@
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   font-family: 'PT Sans', sans-serif;
   font-size: 22px;
   line-height: 26px;
@@ -22,10 +24,45 @@ body {
   color: black;
   width: 1200px;
   margin: 0 auto;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.27);
 }
 
 .navigation {
   display: flex;
+  position: relative;
+  margin: 0 70px;
+  height: 64px;
+}
+
+.navigation-list {
+  display: flex;
+  width: 340px;
+  height: 100%;
+  margin: 0 0 0 28px;
+  padding: 0;
+  justify-content: space-between;
+}
+
+.navigation-item {
+  margin: auto;
+}
+
+.navigation-user {
+  padding: 0;
+  width: 88px;
+  display: flex;
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+.navigation-user-item {
+  width: 44px;
+  text-align: center;
+}
+
+.button-like {
+  background: none;
+  border: none;
 }
 
 .navigation ul {
@@ -54,8 +91,12 @@ body {
 }
 
 .navigation-btn {
+  width: 160px;
+  height: 36px;
+  margin: auto 0;
+  border-radius: 4px;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 20px;
   color: white;
   text-transform: uppercase;
@@ -64,17 +105,28 @@ body {
   text-align: center;
 }
 
+.definition {
+  width: 1200px;
+  height: 767px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
 .definition h1 {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
   text-align: center;
+  margin: 0 auto;
+  width: 620px;
 }
 
 .definition p {
   color: #333333;
   text-align: center;
+  margin-bottom: 90px;
 }
 
 .features-list {
