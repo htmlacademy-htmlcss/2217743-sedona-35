@@ -24,6 +24,14 @@ body {
   margin: 0 auto;
 }
 
+.navigation {
+  display: flex;
+}
+
+.navigation ul {
+  list-style: none;
+}
+
 .navigation-link {
   color: inherit;
   text-decoration: none;
@@ -124,19 +132,19 @@ body {
   background-color: #83B3D31F;
 }
 
-.productions-items li:first-child {
+.productions-living {
   background-image: url(../images/mainHome.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.productions-items li:nth-child(2) {
+.productions-food {
   background-image: url(../images/food.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.productions-items li:nth-child(3) {
+.productions-souvenir {
   background-image: url(../images/giftBox.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -230,4 +238,143 @@ body {
   line-height: 40px;
   color: black;
   text-decoration: none;
+}
+
+
+/*Стили для catalog.html*/
+.catalog-page {
+  background-color: white;
+}
+
+.selection-hotels {
+  background-image: url(../images/catalog/filter.jpg);
+  background-repeat: no-repeat;
+}
+
+.selection-hotels h1 {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+  color: white;
+}
+
+.breadcrumbs {
+  display: flex;
+  list-style: none;
+}
+
+.breadcrumbs a {
+  color: white;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.form-catalog {
+  display: flex;
+}
+
+.catalog-filter {
+  border: none;
+}
+
+.catalog-filter-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: white;
+}
+
+.catalog-filter-list {
+  list-style: none;
+}
+
+.catalog-filter-item {
+  color: white;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.hotels-filter {
+  display: flex;
+}
+
+.heading-result {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: black;
+}
+
+.product-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.product-card-link {
+  text-decoration: none;
+}
+
+.product-card-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: black;
+}
+
+.product-card-select {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+}
+
+.rating-hotel {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #333333;
+}
+
+.more-detailed-link {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: white;
+  background-color: #756157;
+}
+
+.pagination-list {
+  list-style: none;
+  display: flex;
+}
+
+.pagination-current {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+}
+
+.aside-catalog {
+  text-align: center;
+}
+
+.social-link {
+  list-style: none;
+  display: flex;
+}
+
+.page-footer {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
 }
