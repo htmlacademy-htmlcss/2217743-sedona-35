@@ -368,6 +368,19 @@ body {
   text-align: center;
 }
 
+.mailing p {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #333333;
+}
+
+.mailing h2 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+}
+
 .social-link {
   list-style: none;
   display: flex;
