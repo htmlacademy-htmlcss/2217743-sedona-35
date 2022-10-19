@@ -60,7 +60,7 @@
         </ul>
 
         <form action="" method="get" class="form-catalog">
-          <fieldset class="catalog-filter catalog-filter-Infrastructure">
+          <fieldset class="catalog-filter">
             <legend class="catalog-filter-title">Инфраструктура:</legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
@@ -85,7 +85,7 @@
           </fieldset>
 
           <fieldset class="catalog-filter">
-            <legend class="catalog-filter-title">Тип жилья:</legend>
+            <legend class="catalog-filter-title">Тип Жилья:</legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
                 <label class="control">
@@ -108,13 +108,15 @@
             </ul>
           </fieldset>
 
-          <fieldset class="catalog-filter">
+          <fieldset class="catalog-filter catalog-filter-price">
             <legend class="catalog-filter-title">
-              Стоимость,₽:
+              Стоимость, ₽:
             </legend>
             <label class="control">
-              <input type="text" value="0" placeholder="от">
-              <input type="text" value="9000" placeholder="до">
+              <div class="price-place">
+                <input type="text" value="0" placeholder="от" class="control-before">
+                <input type="text" value="9000" placeholder="до" class="control-after">
+              </div>
               <input type="range" min="0" max="9000" step="500" class="range-control">
             </label>
           </fieldset>
