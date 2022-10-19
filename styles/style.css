@@ -68,6 +68,10 @@ body {
   top: 11px;
 }
 
+.button-like:hover .likes-number{
+  background-color: red;
+}
+
 .navigation-item {
   margin: auto;
   padding: 20px 16px;
@@ -103,6 +107,11 @@ body {
   line-height: 24px;
 }
 
+.navigation-list .navigation-link:hover {
+  border-bottom: 2px solid #756257;
+  padding-bottom: 16px;
+}
+
 .page-header {
   background: white;
   color: black;
@@ -129,6 +138,15 @@ body {
   border: none;
   text-align: center;
   margin-bottom: 24px;
+}
+
+.navigation-btn:hover {
+  background: #615048;
+}
+
+.navigation-btn:active {
+  background: #756157;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .definition {
@@ -334,9 +352,25 @@ body {
   cursor: pointer;
 }
 
+.btn-modal-window:hover {
+  background: #615048;
+}
+
+.btn-modal-window:active {
+  background: #756157;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .aside-main {
   background-image: url(../images/Subscribe.jpg);
   background-repeat: no-repeat;
+}
+
+.form-subscribe input::placeholder {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  padding-left: 20px;
 }
 
 .mailing {
@@ -393,6 +427,15 @@ body {
   cursor: pointer;
 }
 
+.button:hover {
+  background: #68A2CA;
+}
+
+.button:active {
+  background: #82B3D3;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .phone {
   font-weight: 400;
   font-size: 40px;
@@ -401,6 +444,13 @@ body {
   text-decoration: none;
 }
 
+.phone:hover {
+  color: #756157;
+}
+
+.phone:active {
+  color: rgba(117, 97, 87, 0.3);
+}
 
 /*Стили для catalog.html*/
 .catalog-page {
@@ -410,6 +460,7 @@ body {
 .selection-hotels {
   background-image: url(../images/catalog/filter.jpg);
   background-repeat: no-repeat;
+  padding: 35px 70px 70px;
 }
 
 .selection-hotels h1 {
@@ -417,19 +468,33 @@ body {
   font-size: 60px;
   line-height: 78px;
   color: white;
+  margin: 0;
+  margin-bottom: 8px;
 }
 
 .breadcrumbs {
   display: flex;
   list-style: none;
+  padding: 0;
+  margin: 0;
+  background-image: url(../images/catalog/halfRow.svg);
+  background-repeat: no-repeat;
+  background-position: 24px 5px;
+  margin-bottom: 40px;
+}
+
+.breadcrumbs li {
+  margin-right: 28px;
 }
 
 .breadcrumbs a {
+  font-family: 'PT Sans';
   color: white;
   text-decoration: none;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
+  display: block;
 }
 
 .form-catalog {
@@ -438,6 +503,12 @@ body {
 
 .catalog-filter {
   border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-filter-Infrastructure {
+  margin-right: 70px;
 }
 
 .catalog-filter-title {
@@ -445,10 +516,14 @@ body {
   font-size: 20px;
   line-height: 24px;
   color: white;
+  padding: 0;
+  margin-bottom: 32px;
 }
 
 .catalog-filter-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .catalog-filter-item {
@@ -458,8 +533,61 @@ body {
   line-height: 23px;
 }
 
+.catalog-filter-item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.catalog-filter-buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.accept-button {
+  width: 190px;
+  height: 36px;
+}
+
+.cancel-button {
+  width: 190px;
+  height: 36px;
+}
+
 .hotels-filter {
   display: flex;
+  padding: 50px 70px 0;
+}
+
+.button-table {
+  width: 44px;
+  height: 44px;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+}
+
+.button-table:hover {
+  border: 2px solid black;
+}
+
+.cards {
+  background-image: url(../images/catalog/cards.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.slide {
+  background-image: url(../images/catalog/slide.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.column {
+  background-image: url(../images/catalog/column.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.button-table:not(:last-child) {
+  margin-right: 8px;
 }
 
 .heading-result {
@@ -468,23 +596,102 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   color: black;
+  padding: 0;
+  margin: auto 0;
+  margin-right: 200px;
+}
+
+.select-control {
+  font-family: 'PT Sans';
+  width: 292px;
+  height: 44px;
+  margin-right: 70px;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+  padding: 0 14px;
+  appearance: none;
+  background: url(../images/arrowSelect.svg) no-repeat right;
+  background-position-x: calc(100% - 14px);
+}
+
+.select-control:hover {
+  border: 2px solid #68A2CA;
+}
+
+.select-control:focus {
+  border: 2px solid #68A2CA;
+}
+
+.select-control:active {
+  border: 2px solid #3F5E72;
+}
+
+.hotels-result {
+  margin: 40px 70px;
 }
 
 .product-list {
   list-style: none;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+}
+
+.product-card {
+  width: 340px;
+  height: 438px;
+  border: 1px solid #E6E6E6;
+  border-radius: 4px;
+}
+
+.card-content {
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product-card:nth-child(1) .card-content {
+  background-image: url(../images/catalog/stars-4.svg);
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+}
+
+.product-card:nth-child(2) .card-content {
+  background-image: url(../images/catalog/stars-4.svg);
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+}
+
+.product-card:nth-child(3) .card-content {
+  background-image: url(../images/catalog/stars-3.svg);
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+}
+
+.product-card:nth-child(4) .card-content {
+  background-image: url(../images/catalog/stars-2.svg);
+  background-repeat: no-repeat;
+  background-position: 0 100%;
 }
 
 .product-card-link {
   text-decoration: none;
-}
-
-.product-card-title {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   color: black;
+}
+
+.product-card-title {
+  padding: 0;
+  margin: 16px 0;
 }
 
 .product-card-select {
@@ -492,13 +699,50 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
+  width: 50%;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.product-card-price {
+  text-align: right;
+}
+
+.favorites-button {
+  width: 140px;
+  height: 36px;
+  font-family: 'PT Sans';
+  background: #82B3D3;
+  border-radius: 4px;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.favorites-button:hover {
+  background: #68A2CA;
+}
+
+.favorites-button:active {
+  background: #82B3D3;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .rating-hotel {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+  text-transform: uppercase;
   color: #333333;
+  margin-top: 16px;
+  background: #F2F2F2;
+  border-radius: 4px;
+  margin-left: auto;
+  padding: 8px 22px;
 }
 
 .more-detailed-link {
@@ -509,24 +753,86 @@ body {
   text-transform: uppercase;
   color: white;
   background-color: #756157;
+  padding: 8px 26px;
+  border-radius: 4px;
+}
+
+.more-detailed-link:hover {
+  background: #615048;
+}
+
+.more-detailed-link:active {
+  background: #756157;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.line {
+  max-width: 1060px;
+  opacity: 0.3;
+  margin: 0 auto;
 }
 
 .pagination-list {
   list-style: none;
   display: flex;
+  padding: 0;
+  margin: 40px 70px 60px;
+}
+
+.pagination-item {
+  width: 60px;
+  height: 60px;
+  background: #82B3D3;
+  border-radius: 4px;
+}
+
+.pagination-item:hover {
+  background: #F2F2F2;
+}
+
+.pagination-item a:hover {
+  color: black;
+}
+
+.pagination-item:nth-child(5) {
+  background: none;
+}
+
+.pagination-item:nth-child(5) a{
+  color: black;
+  cursor: default;
+}
+
+.pagination-item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .pagination-current {
   font-weight: 700;
   font-size: 20px;
-  line-height: 36px;
+  line-height: 60px;
   text-decoration: none;
-  color: black;
+  color: white;
   text-transform: uppercase;
+  display: block;
+  text-align: center;
 }
 
 .aside-catalog {
   text-align: center;
+  background-image: none;
+}
+
+.aside-catalog h2 {
+  color: black;
+}
+
+.aside-catalog p {
+  color: #333333;
+}
+
+.aside-catalog input {
+  background-color: #F2F2F2;
 }
 
 .social-link {
@@ -636,3 +942,6 @@ body {
   color: black;
   margin: 0;
 }
+
+
+/* стили каталога */
