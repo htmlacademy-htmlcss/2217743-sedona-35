@@ -104,9 +104,9 @@
       </section>
 
       <section class="interest-block">
-          <h2 class="question">Заинтересовались?</h2>
-          <p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <button class="btn-modal-window" id="open-modal-window">поиск гостиницы в седоне</button>
+        <h2 class="question">Заинтересовались?</h2>
+        <p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <button class="btn-modal-window" id="open-modal-window">поиск гостиницы в седоне</button>
       </section>
 
       <aside class="aside-main">
@@ -150,39 +150,40 @@
     </footer>
 
     <div class="modal-window" id="modal-window">
-      <div class="modal-window-content">
+      <div class="modal-window-table">
+        <div class="modal-window-content">
           <h2 class="modal-window-h2">поиск гостиницы в седоне</h2>
           <button class="close-modal-window"></button>
 
-        <form action="#" method="get" class="modal-form">
-          <p>
-            <label for="date-in">Дата Заезда:</label>
-            <input type="date" id="date-in" name="date-in">
-          </p>
-          <p>
-            <label for="date-out">Дата Выезда:</label>
-            <input type="date" id="date-out" name="date-out">
-          </p>
-          <div class="block-adult">
-            <label for="set-adults">Взрослые:</label>
-            <button class="button-plus">+</button>
-            <input type="text" id="set-adults" name="set-adults" value="1" min="1">
-            <button class="button-minus">-</button>
-          </div>
-          <div class="block-child">
-            <label for="set-child">Дети</label>
-            <span class="tooltip">
-              <button class="tooltip-button" aria-describedby="one"></button>
-              <span class="tooltip-text" role="tooltip" id="one">
+          <form action="#" method="get" class="modal-form">
+            <p>
+              <label for="date-in">Дата Заезда:</label>
+              <input type="date" id="date-in" name="date-in">
+            </p>
+            <p>
+              <label for="date-out">Дата Выезда:</label>
+              <input type="date" id="date-out" name="date-out">
+            </p>
+            <div class="block-adult">
+              <label for="set-adults">Взрослые:</label>
+              <button class="button-plus">+</button>
+              <input type="text" id="set-adults" name="set-adults" value="1" min="1">
+              <button class="button-minus">-</button>
+            </div>
+            <div class="block-child">
+              <label for="set-child">Дети</label>
+              <span class="tooltip">
+                <button class="tooltip-button" aria-describedby="one"></button>
+                <span class="tooltip-text" role="tooltip" id="one">
+                </span>
               </span>
-            </span>
-            <button class="button-plus">+</button>
-            <input type="text" id="set-child" name="set-child" value="0" min="0">
-            <button class="button-minus">-</button>
-          </div>
-          <button class="button-search">Найти</button>
-        </form>
-
+              <button class="button-plus">+</button>
+              <input type="text" id="set-child" name="set-child" value="0" min="0">
+              <button class="button-minus">-</button>
+            </div>
+            <button class="button-search">Найти</button>
+          </form>
+        </div>
       </div>
     </div>
     <script src="scripts/script.js"></script>
