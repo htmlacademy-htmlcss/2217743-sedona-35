@@ -3,7 +3,7 @@ let btn = document.getElementById('open-modal-window');
 let span = document.getElementsByClassName("close-modal-window")[0];
 
 btn.onclick = function() {
-    modal.style.display = "table";
+    modal.style.display = "block";
 }
 
 span.onclick = function() {

@@ -150,40 +150,65 @@
     </footer>
 
     <div class="modal-window" id="modal-window">
-      <div class="modal-window-table">
-        <div class="modal-window-content">
-          <h2 class="modal-window-h2">поиск гостиницы в седоне</h2>
-          <button class="close-modal-window"></button>
+      <div class="modal-window-content">
+        <h2 class="modal-window-h2">поиск гостиницы в седоне</h2>
+        <button class="close-modal-window"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M14 1.29231L12.7077 0L7 5.70769L1.29231 0L0 1.29231L5.70769 7L0 12.7077L1.29231 14L7 8.29231L12.7077 14L14 12.7077L8.29231 7L14 1.29231Z"
+              fill="black" />
+          </svg>
+        </button>
 
-          <form action="#" method="get" class="modal-form">
-            <p>
-              <label for="date-in">Дата Заезда:</label>
-              <input type="date" id="date-in" name="date-in">
-            </p>
-            <p>
-              <label for="date-out">Дата Выезда:</label>
-              <input type="date" id="date-out" name="date-out">
-            </p>
+        <form method="get" class="modal-form">
+          <p>
+            <label class="date-in" for="date-in">Дата Заезда:</label>
+            <input type="text" id="date-in" name="date-in" class="input-date" placeholder="27 апреля 2020"
+              onfocus="(this.type='date')">
+          </p>
+          <p>
+            <label class="date-out" for="date-out">Дата Выезда:</label>
+            <input type="text" id="date-out" name="date-out" class="input-date" placeholder="1 сентября 2023"
+              onfocus="(this.type='date')">
+          </p>
+          <div class="people-block">
             <div class="block-adult">
               <label for="set-adults">Взрослые:</label>
-              <button class="button-plus">+</button>
-              <input type="text" id="set-adults" name="set-adults" value="1" min="1">
-              <button class="button-minus">-</button>
+              <button class="button-minus"><svg width="14" height="2" viewBox="0 0 14 2" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3" />
+                </svg></button>
+              <input class="range-set" type="number" id="set-adults" name="set-adults" value="1" min="1" disabled>
+              <button class="button-plus"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3" />
+                </svg></button>
             </div>
             <div class="block-child">
-              <label for="set-child">Дети</label>
+              <label for="set-child">Дети:</label>
               <span class="tooltip">
-                <button class="tooltip-button" aria-describedby="one"></button>
-                <span class="tooltip-text" role="tooltip" id="one">
-                </span>
+                <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
+                  <svg width="2" height="12" viewBox="0 0 2 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H2V2H0V0ZM2 12H0V3H2V12Z" fill="white" />
+                  </svg>
+                </button>
+                <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей, которые
+                  будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
               </span>
-              <button class="button-plus">+</button>
-              <input type="text" id="set-child" name="set-child" value="0" min="0">
-              <button class="button-minus">-</button>
+              </span>
+              <button class="button-minus"><svg width="14" height="2" viewBox="0 0 14 2" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3" />
+                </svg></button>
+              <input class="range-set" type="number" id="set-child" name="set-child" value="0" min="0" disabled>
+              <button class="button-plus"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3" />
+                </svg></button>
             </div>
-            <button class="button-search">Найти</button>
-          </form>
-        </div>
+          </div>
+          <button class="button-search">Найти</button>
+        </form>
       </div>
     </div>
     <script src="scripts/script.js"></script>
