@@ -507,16 +507,17 @@ body {
   border: none;
   margin: 0;
   padding: 0;
+  margin-right: 70px;
 }
 
 .price-place {
   display: flex;
   gap: 5px;
-  margin-bottom: 36px;
+  margin-bottom: 43px;
 }
 
 .catalog-filter-price {
-  margin-left: 90px;
+  margin-left: 82px;
 }
 
 .catalog-filter-title {
@@ -528,6 +529,16 @@ body {
   margin-bottom: 32px;
 }
 
+.control {
+  display: flex;
+  align-items: center;
+}
+
+.control-place {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
 
 .catalog-filter-list {
   list-style: none;
@@ -540,6 +551,52 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 23px;
+}
+
+.control-mark {
+  display: block;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  background: #FFFFFF;
+  border-radius: 4px;
+  margin-right: 16px;
+}
+
+.control:hover .control-mark {
+  opacity: 0.4;
+}
+
+.control-input[type="checkbox"]:checked+.control-mark::before,
+.control-input[type="checkbox"]:checked+.control-mark::after {
+  background: url(../images/input-arrow.svg) white no-repeat center;
+  position: absolute;
+  left: 4.5px;
+  top: 6px;
+  width: 13px;
+  height: 10px;
+  content: "";
+}
+
+.control-radio {
+  position: relative;
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50%;
+  margin-right: 16px;
+}
+
+.control-input[type="radio"]:checked+.control-radio::before,
+.control-input[type="radio"]:checked+.control-radio::after {
+  background: url(../images/circle.svg) white no-repeat;
+  position: absolute;
+  left: 4.5px;
+  top: 4.5px;
+  width: 11px;
+  height: 11px;
+  content: "";
 }
 
 .range-control {
@@ -559,7 +616,7 @@ body {
   background: #F2F2F2;
   border-radius: 4px 0 0 4px;
   border: none;
-  width: 100px;
+  width: 104px;
   height: 48px;
   padding: 0 20px;
   margin-right: -3px;
@@ -568,12 +625,62 @@ body {
   line-height: 24px;
 }
 
+.price-min {
+  position: relative;
+}
+
+.placeholder {
+  display: block;
+  position: absolute;
+  right: 18px;
+  top: 12px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000;
+  opacity: 0.3;
+}
+
+.range {
+  position: relative;
+  width: 287px;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.range-bar {
+  position: absolute;
+  height: 4px;
+  background-color: white;
+  left: 0;
+  width: 226px;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.toggle-min {
+  left: 0;
+  top: -8px;
+}
+
+.toggle-max {
+  right: 0;
+  top: -8px;
+}
 
 .control-after {
   background: #F2F2F2;
   border-radius: 0 4px 4px 0;
   border: none;
-  width: 100px;
+  width: 104px;
   height: 48px;
   padding: 0 20px;
   font-weight: 700;
@@ -972,14 +1079,14 @@ body {
 }
 
 .tooltip-text:after {
-  content:'';
+  content: '';
   background-image: url("../images/tooltip-arrow.svg");
   width: 19px;
   height: 9px;
-  position:absolute;
+  position: absolute;
   bottom: 100%;
-  left:0;
-  right:0;
+  left: 0;
+  right: 0;
   margin-left: auto;
   margin-right: auto;
 }
