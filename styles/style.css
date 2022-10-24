@@ -46,6 +46,10 @@ body {
   margin-bottom: -10px;
 }
 
+.navigation-link-logo:focus {
+  outline: 3px solid #83B3D3;
+}
+
 .navigation-list {
   display: flex;
   height: 100%;
@@ -68,8 +72,14 @@ body {
   top: 11px;
 }
 
-.button-like:hover .likes-number {
-  background-color: red;
+.button-like:focus svg,
+.button-like:hover svg {
+  fill: #000;
+  fill-opacity: 0.3;
+}
+
+.button-like:focus {
+  outline: none;
 }
 
 .navigation-item {
@@ -107,9 +117,21 @@ body {
   line-height: 24px;
 }
 
+.navigation-link-current:focus path,
+.nav-link-svg:hover path {
+  fill: #000;
+  fill-opacity: 0.3;
+}
+
+.navigation-link-current:focus {
+  outline: none;
+}
+
+.navigation-list .navigation-link:focus,
 .navigation-list .navigation-link:hover {
   border-bottom: 2px solid #756257;
   padding-bottom: 16px;
+  outline: none;
 }
 
 .page-header {
@@ -352,8 +374,12 @@ body {
   cursor: pointer;
 }
 
+.more-detailed-link:focus,
+.navigation-btn:focus,
+.btn-modal-window:focus,
 .btn-modal-window:hover {
   background: #615048;
+  outline: none;
 }
 
 .btn-modal-window:active {
@@ -408,13 +434,22 @@ body {
 }
 
 .form-subscribe input {
-  width: 452px;
-  height: 52px;
+  width: 432px;
+  height: 32px;
   border-radius: 4px 0 0 4px;
   border: none;
+  padding: 10px;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.form-subscribe input:focus {
+  outline: 3px solid #83B3D3;
 }
 
 .button {
+  font-family: 'PT Sans';
   color: white;
   text-transform: uppercase;
   font-weight: 700;
@@ -423,12 +458,15 @@ body {
   background-color: #82B3D3;
   border: none;
   border-radius: 0 4px 4px 0;
-  padding: 8px 50px;
   cursor: pointer;
+  width: 232px;
+  height: 52px;
 }
 
+.button:focus,
 .button:hover {
   background: #68A2CA;
+  outline: none;
 }
 
 .button-search:active,
@@ -445,8 +483,10 @@ body {
   text-decoration: none;
 }
 
+.phone:focus,
 .phone:hover {
   color: #756157;
+  outline: none;
 }
 
 .phone:active {
@@ -496,6 +536,19 @@ body {
   font-size: 16px;
   line-height: 21px;
   display: block;
+}
+
+.breadcrumbs a:hover {
+  opacity: 0.6;
+}
+
+.breadcrumbs a:focus {
+  opacity: 0.6;
+  outline: none;
+}
+
+.breadcrumbs a:active {
+  opacity: 0.3;
 }
 
 .form-catalog {
@@ -563,8 +616,14 @@ body {
   margin-right: 16px;
 }
 
+.control:hover .control-radio,
 .control:hover .control-mark {
-  opacity: 0.4;
+  opacity: 0.6;
+}
+
+.control:active .control-radio,
+.control:active .control-mark  {
+  opacity: 0.3;
 }
 
 .control-input[type="checkbox"]:checked+.control-mark::before,
@@ -623,6 +682,25 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
+}
+
+.range-toggle:focus,
+.control-after:focus,
+.control-before:focus {
+  outline: 3px solid #83B3D3;
+}
+
+.select-control:focus,
+.cancel-button:focus {
+  border: 3px solid #83B3D3;
+  border-radius: 4px;
+  outline: none;
+}
+
+.button-table:focus {
+  border: 2px solid #83B3D3;
+  border-radius: 4px;
+  outline: none;
 }
 
 .price-min {
@@ -703,8 +781,10 @@ body {
   margin-top: 56px;
 }
 
+.accept-button:focus,
 .accept-button:hover {
   background: #68A2CA;
+  outline: none;
 }
 
 .accept-button:active {
@@ -873,6 +953,10 @@ body {
   color: black;
 }
 
+.product-card-link:focus {
+  outline: none;
+}
+
 .product-card-title {
   padding: 0;
   margin: 16px 0;
@@ -907,9 +991,11 @@ body {
   line-height: 20px;
 }
 
+.favorites-button:focus,
 .button-search:hover,
 .favorites-button:hover {
   background: #68A2CA;
+  outline: none;
 }
 
 .favorites-button:active {
@@ -975,8 +1061,10 @@ body {
   background: #F2F2F2;
 }
 
-.pagination-item a:hover {
+.pagination-current:focus,
+.pagination-current:hover {
   color: black;
+  background: #F2F2F2;
 }
 
 .pagination-item:nth-child(5) {
@@ -1037,6 +1125,35 @@ body {
 .social-item {
   display: block;
   padding: 13px;
+}
+
+.social-item-link:focus path,
+.social-item-link:hover path {
+  fill: #68A2CA;
+}
+
+.social-item-link:active path {
+  fill: #68A2CA;
+  fill-opacity: 0.3;
+}
+
+.social-item-link:focus {
+  outline: none;
+}
+
+.htmlAcademy-link:focus path,
+.htmlAcademy-svg:hover path {
+  fill: #756157;
+  outline: none;
+}
+
+.htmlAcademy-link:focus {
+  outline: none;
+}
+
+.htmlAcademy-svg:active path {
+  fill: #756157;
+  fill-opacity: 0.3;
 }
 
 .footer-content {
