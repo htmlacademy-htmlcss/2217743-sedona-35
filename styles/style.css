@@ -807,6 +807,7 @@ body {
   margin-top: 56px;
 }
 
+
 .accept-button:focus,
 .accept-button:hover {
   background: #68A2CA;
@@ -1029,8 +1030,11 @@ body {
   line-height: 20px;
 }
 
-.favorites-button:focus,
+.tooltip-toggle:focus,
+.tooltip-toggle:hover,
 .button-search:hover,
+.button-search:focus,
+.favorites-button:focus,
 .favorites-button:hover {
   background: #68A2CA;
   outline: none;
@@ -1316,6 +1320,7 @@ body {
 }
 
 .input-date {
+  position: relative;
   padding: 12px 20px;
   border: none;
   background: #F2F2F2;
@@ -1324,6 +1329,10 @@ body {
   font-size: 18px;
   line-height: 24px;
   width: 390px;
+}
+
+.input-date:focus {
+  outline: 2px solid #82B3D3ed;
 }
 
 .date-in {
@@ -1340,6 +1349,42 @@ body {
   margin-right: 18px;
 }
 
+.form-date {
+  position: relative;
+}
+
+.form-date::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url(../images/calendar.svg);
+  background-repeat: no-repeat;
+  opacity: 0.3;
+  left: 540px;
+  top: 16px;
+  z-index: 1;
+}
+
+.verify-date-in {
+  position: absolute;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  right: 140px;
+  top: 50px;
+  color: #FF5757;
+}
+
+.verify-date-out {
+  position: absolute;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  right: 88px;
+  top: 50px;
+  color: black
+}
 
 .block-adult label {
   margin-right: 46px;
@@ -1404,7 +1449,9 @@ body {
 
 .button-minus:focus,
 .button-plus:focus {
-  outline: 2px solid #82B3D3ed;
+  outline: none;
+  border: 2px solid #82B3D3;
+  border-radius: 4px;
 }
 
 .button-minus:active path,

@@ -180,15 +180,15 @@
         </button>
 
         <form method="get" class="modal-form" onsubmit="return false;">
-          <p>
+          <p class="form-date">
             <label class="date-in" for="date-in">Дата Заезда:</label>
-            <input type="text" id="date-in" name="date-in" class="input-date" placeholder="27 апреля 2020"
-              onfocus="(this.type='date')">
+            <input type="text" id="date-in" name="date-in" class="input-date" placeholder="27 апреля 2020">
+            <span class="verify-date-in">Мы не можем отправить вас в прошлое.</span>
           </p>
-          <p>
+          <p class="form-date">
             <label class="date-out" for="date-out">Дата Выезда:</label>
-            <input type="text" id="date-out" name="date-out" class="input-date" placeholder="1 сентября 2023"
-              onfocus="(this.type='date')">
+            <input type="text" id="date-out" name="date-out" class="input-date" placeholder="1 сентября 2023">
+            <span class="verify-date-out">На эти даты есть свободные номера. Пока есть.</span>
           </p>
           <div class="people-block">
             <div class="block-adult">
