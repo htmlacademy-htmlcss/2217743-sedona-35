@@ -27,6 +27,12 @@ body {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
+@media screen and (max-width: 1200px) {
+  body {
+    min-width: 1200px;
+  }
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -83,6 +89,7 @@ body {
 }
 
 .navigation-item {
+  position: relative;
   margin: auto;
   padding: 20px 16px;
 }
@@ -117,13 +124,23 @@ body {
   line-height: 24px;
 }
 
-.navigation-link-current:focus path,
+.navigation-link:focus path,
 .nav-link-svg:hover path {
   fill: #000;
   fill-opacity: 0.3;
 }
 
-.navigation-link-current:focus {
+.navigation-link-current::before {
+  position: absolute;
+  content: "";
+  height: 2px;
+  background-color: #756257;
+  left: 16px;
+  right: 14px;
+  bottom: 1px;
+}
+
+.navigation-link:focus {
   outline: none;
 }
 
@@ -622,7 +639,7 @@ body {
 }
 
 .control:active .control-radio,
-.control:active .control-mark  {
+.control:active .control-mark {
   opacity: 0.3;
 }
 
@@ -630,7 +647,7 @@ body {
 .control-input[type="checkbox"]:checked+.control-mark::after {
   background: url(../images/input-arrow.svg) white no-repeat center;
   position: absolute;
-  left: 4.5px;
+  left: 3.5px;
   top: 6px;
   width: 13px;
   height: 10px;
@@ -657,6 +674,15 @@ body {
   height: 11px;
   content: "";
 }
+
+.control-input:focus+.control-mark {
+  outline: 3px solid #83B3D3;
+}
+
+.control-input:focus+.control-radio {
+  outline: 3px solid #83B3D3;
+}
+
 
 .range-control {
   width: 287px;
@@ -833,9 +859,21 @@ body {
 }
 
 .cards {
+  position: relative;
   background-image: url(../images/catalog/cards.svg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
+}
+
+.cards::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border: 2px solid black;
+  border-radius: 4px;
+  top: -2px;
+  left: -2px;
 }
 
 .slide {
@@ -1435,6 +1473,3 @@ body {
   margin: 0;
   margin-bottom: 64px;
 }
-
-
-/* стили каталога */
