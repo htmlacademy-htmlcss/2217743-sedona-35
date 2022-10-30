@@ -55,6 +55,7 @@ body {
 .navigation-list {
   display: flex;
   height: 100%;
+  max-width: 350px;
   margin: 0 0 0 28px;
   padding: 0;
   justify-content: space-between;
@@ -62,16 +63,16 @@ body {
 
 .likes-number {
   position: absolute;
-  width: 20px;
-  height: 20px;
+  min-width: 20px;
+  min-height: 20px;
   background: #7DB54F;
-  border-radius: 50%;
+  border-radius: 20px;
   color: white;
   font-weight: 400;
   font-size: 10px;
   line-height: 20px;
-  right: 181px;
-  top: 11px;
+  right: -1px;
+  top: -8px;
 }
 
 .button-like:focus svg,
@@ -103,6 +104,7 @@ body {
 }
 
 .button-like {
+  position: relative;
   background: none;
   border: none;
 }
@@ -173,6 +175,7 @@ body {
   border: none;
   text-align: center;
   margin-bottom: 24px;
+  max-width: 160px;
 }
 
 .navigation-btn:hover {
@@ -374,8 +377,8 @@ body {
   font-family: 'PT Sans';
   background-color: #756157;
   border-radius: 4px;
-  width: 376px;
-  height: 52px;
+  min-width: 376px;
+  min-height: 52px;
   color: white;
   text-transform: uppercase;
   text-align: center;
@@ -472,8 +475,8 @@ body {
   border: none;
   border-radius: 0 4px 4px 0;
   cursor: pointer;
-  width: 232px;
-  height: 52px;
+  min-width: 232px;
+  min-height: 52px;
 }
 
 .button:focus,
@@ -791,7 +794,7 @@ body {
 .accept-button {
   font-family: 'PT Sans';
   width: 190px;
-  height: 36px;
+  min-height: 36px;
   background: #82B3D3;
   border-radius: 4px;
   border: none;
@@ -820,7 +823,7 @@ body {
   font-family: 'PT Sans';
   text-transform: uppercase;
   width: 190px;
-  height: 36px;
+  min-height: 36px;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -844,8 +847,8 @@ body {
 }
 
 .button-table {
-  width: 44px;
-  height: 44px;
+  min-width: 48px;
+  height: 48px;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
   background: none;
@@ -865,8 +868,8 @@ body {
 .cards::before {
   content: "";
   position: absolute;
-  width: 40px;
-  height: 40px;
+  width: 44px;
+  height: 44px;
   border: 2px solid black;
   border-radius: 4px;
   top: -2px;
@@ -939,12 +942,12 @@ body {
   grid-template-columns: repeat(3, 1fr);
   margin: 0;
   padding: 0;
-  gap: 20px;
+  gap: 17px;
 }
 
 .product-card {
   width: 340px;
-  height: 438px;
+  min-height: 438px;
   border: 1px solid #E6E6E6;
   border-radius: 4px;
 }
@@ -994,7 +997,10 @@ body {
 
 .product-card-title {
   padding: 0;
-  margin: 16px 0;
+  margin: 10px 0 16px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
 }
 
 .product-card-select {
@@ -1013,8 +1019,8 @@ body {
 }
 
 .favorites-button {
-  width: 140px;
-  height: 36px;
+  min-width: 140px;
+  min-height: 36px;
   font-family: 'PT Sans';
   background: #82B3D3;
   border-radius: 4px;
@@ -1085,12 +1091,12 @@ body {
   list-style: none;
   display: flex;
   padding: 0;
-  margin: 40px 70px 60px;
+  margin: 40px 70px 57px;
 }
 
 .pagination-item {
-  width: 60px;
-  height: 60px;
+  min-width: 60px;
+  min-height: 60px;
   background: #82B3D3;
   border-radius: 4px;
 }
