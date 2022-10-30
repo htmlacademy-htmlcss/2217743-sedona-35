@@ -27,6 +27,12 @@ body {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
+@media screen and (max-width: 1200px) {
+  body {
+    min-width: 1200px;
+  }
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -83,6 +89,7 @@ body {
 }
 
 .navigation-item {
+  position: relative;
   margin: auto;
   padding: 20px 16px;
 }
@@ -117,13 +124,23 @@ body {
   line-height: 24px;
 }
 
-.navigation-link-current:focus path,
+.navigation-link:focus path,
 .nav-link-svg:hover path {
   fill: #000;
   fill-opacity: 0.3;
 }
 
-.navigation-link-current:focus {
+.navigation-link-current::before {
+  position: absolute;
+  content: "";
+  height: 2px;
+  background-color: #756257;
+  left: 16px;
+  right: 14px;
+  bottom: 1px;
+}
+
+.navigation-link:focus {
   outline: none;
 }
 
@@ -622,7 +639,7 @@ body {
 }
 
 .control:active .control-radio,
-.control:active .control-mark  {
+.control:active .control-mark {
   opacity: 0.3;
 }
 
@@ -630,7 +647,7 @@ body {
 .control-input[type="checkbox"]:checked+.control-mark::after {
   background: url(../images/input-arrow.svg) white no-repeat center;
   position: absolute;
-  left: 4.5px;
+  left: 3.5px;
   top: 6px;
   width: 13px;
   height: 10px;
@@ -657,6 +674,15 @@ body {
   height: 11px;
   content: "";
 }
+
+.control-input:focus+.control-mark {
+  outline: 3px solid #83B3D3;
+}
+
+.control-input:focus+.control-radio {
+  outline: 3px solid #83B3D3;
+}
+
 
 .range-control {
   width: 287px;
@@ -781,6 +807,7 @@ body {
   margin-top: 56px;
 }
 
+
 .accept-button:focus,
 .accept-button:hover {
   background: #68A2CA;
@@ -833,9 +860,21 @@ body {
 }
 
 .cards {
+  position: relative;
   background-image: url(../images/catalog/cards.svg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
+}
+
+.cards::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border: 2px solid black;
+  border-radius: 4px;
+  top: -2px;
+  left: -2px;
 }
 
 .slide {
@@ -991,8 +1030,11 @@ body {
   line-height: 20px;
 }
 
-.favorites-button:focus,
+.tooltip-toggle:focus,
+.tooltip-toggle:hover,
 .button-search:hover,
+.button-search:focus,
+.favorites-button:focus,
 .favorites-button:hover {
   background: #68A2CA;
   outline: none;
@@ -1278,6 +1320,7 @@ body {
 }
 
 .input-date {
+  position: relative;
   padding: 12px 20px;
   border: none;
   background: #F2F2F2;
@@ -1286,6 +1329,10 @@ body {
   font-size: 18px;
   line-height: 24px;
   width: 390px;
+}
+
+.input-date:focus {
+  outline: 2px solid #82B3D3ed;
 }
 
 .date-in {
@@ -1302,6 +1349,42 @@ body {
   margin-right: 18px;
 }
 
+.form-date {
+  position: relative;
+}
+
+.form-date::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url(../images/calendar.svg);
+  background-repeat: no-repeat;
+  opacity: 0.3;
+  left: 540px;
+  top: 16px;
+  z-index: 1;
+}
+
+.verify-date-in {
+  position: absolute;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  right: 140px;
+  top: 50px;
+  color: #FF5757;
+}
+
+.verify-date-out {
+  position: absolute;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  right: 88px;
+  top: 50px;
+  color: black
+}
 
 .block-adult label {
   margin-right: 46px;
@@ -1366,7 +1449,9 @@ body {
 
 .button-minus:focus,
 .button-plus:focus {
-  outline: 2px solid #82B3D3ed;
+  outline: none;
+  border: 2px solid #82B3D3;
+  border-radius: 4px;
 }
 
 .button-minus:active path,
@@ -1435,6 +1520,3 @@ body {
   margin: 0;
   margin-bottom: 64px;
 }
-
-
-/* стили каталога */

@@ -31,7 +31,7 @@
 
         <ul class="navigation-user">
           <li class="navigation-user-item">
-            <a href="#" class="navigation-link navigation-link-current">
+            <a href="#" class="navigation-link">
               <svg class="nav-link-svg" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="m19.5 18-3.7-3.67c1-1.3 1.7-2.98 1.7-4.87a8 8 0 0 0-8-7.96c-4.4 0-8 3.68-8 8.06a8 8 0 0 0 12.9 6.26l3.7 3.68 1.4-1.5Zm-10-2.48a6 6 0 0 1-6-5.96 6 6 0 0 1 12 0 6 6 0 0 1-6 5.96Z"
@@ -181,15 +181,15 @@
         </button>
 
         <form method="get" class="modal-form" onsubmit="return false;">
-          <p>
+          <p class="form-date">
             <label class="date-in" for="date-in">Дата Заезда:</label>
-            <input type="text" id="date-in" name="date-in" class="input-date" placeholder="27 апреля 2020"
-              onfocus="(this.type='date')">
+            <input type="text" id="date-in" name="date-in" class="input-date" placeholder="27 апреля 2020">
+            <span class="verify-date-in">Мы не можем отправить вас в прошлое.</span>
           </p>
-          <p>
+          <p class="form-date">
             <label class="date-out" for="date-out">Дата Выезда:</label>
-            <input type="text" id="date-out" name="date-out" class="input-date" placeholder="1 сентября 2023"
-              onfocus="(this.type='date')">
+            <input type="text" id="date-out" name="date-out" class="input-date" placeholder="1 сентября 2023">
+            <span class="verify-date-out">На эти даты есть свободные номера. Пока есть.</span>
           </p>
           <div class="people-block">
             <div class="block-adult">
