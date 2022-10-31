@@ -1094,7 +1094,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   padding: 0;
-  margin: 40px 70px 57px;
+  margin: 37px 70px 61px;
 }
 
 .pagination-item {
@@ -1114,8 +1114,14 @@ body {
   background: #F2F2F2;
 }
 
-.pagination-item:nth-child(5) {
-  background: none;
+.pagination-item:nth-child(5) div{
+  background: white;
+  color: black;
+}
+
+.pagination-item:first-child a {
+  color: black;
+  background: #F2F2F2;
 }
 
 .pagination-item:nth-child(5) a {
