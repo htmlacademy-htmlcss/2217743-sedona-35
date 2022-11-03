@@ -510,6 +510,7 @@ body {
   background-image: url(../images/catalog/filter.jpg);
   background-repeat: no-repeat;
   padding: 35px 70px 70px;
+  background-size: cover;
 }
 
 .selection-hotels h1 {
