@@ -81,10 +81,6 @@ body {
   fill-opacity: 0.3;
 }
 
-.button-like:focus {
-  outline: none;
-}
-
 .navigation-item {
   position: relative;
   margin: auto;
@@ -136,10 +132,6 @@ body {
   left: 16px;
   right: 14px;
   bottom: 1px;
-}
-
-.navigation-link:focus {
-  outline: none;
 }
 
 .navigation-list .navigation-link:focus,
@@ -502,7 +494,7 @@ body {
 .phone:focus,
 .phone:hover {
   color: #756157;
-  outline: none;
+  outline-color: #756157;
 }
 
 .phone:active {
@@ -518,6 +510,7 @@ body {
   background-image: url(../images/catalog/filter.jpg);
   background-repeat: no-repeat;
   padding: 35px 70px 70px;
+  background-size: cover;
 }
 
 .selection-hotels h1 {
@@ -561,7 +554,6 @@ body {
 
 .breadcrumbs a:focus {
   opacity: 0.6;
-  outline: none;
 }
 
 .breadcrumbs a:active {
@@ -993,10 +985,6 @@ body {
   color: black;
 }
 
-.product-card-link:focus {
-  outline: none;
-}
-
 .product-card-title {
   padding: 0;
   margin: 10px 0 16px;
@@ -1193,17 +1181,16 @@ body {
 }
 
 .social-item-link:focus {
-  outline: none;
+  outline-color: #68A2CA;
 }
 
 .htmlAcademy-link:focus path,
 .htmlAcademy-svg:hover path {
   fill: #756157;
-  outline: none;
 }
 
 .htmlAcademy-link:focus {
-  outline: none;
+  outline-color: #756157;
 }
 
 .htmlAcademy-svg:active path {
