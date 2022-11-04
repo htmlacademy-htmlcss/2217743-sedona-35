@@ -200,8 +200,7 @@ body {
 .definition p {
   color: #333333;
   text-align: center;
-  padding-top: 5px;
-  margin-bottom: 90px;
+  margin: 25px 270px 90px;
 }
 
 .features {
@@ -301,7 +300,7 @@ body {
 .productions-living {
   background-image: url(../images/main_home.svg);
   background-repeat: no-repeat;
-  background-position: 50% 25%;
+  background-position: 50% 78px;
   background-color: #83B3D31F;
 }
 
@@ -309,13 +308,13 @@ body {
   background-color: white;
   background-image: url(../images/food.svg);
   background-repeat: no-repeat;
-  background-position: 50% 25%;
+  background-position: 50% 78px;
 }
 
 .productions-souvenir {
   background-image: url(../images/gift_box.svg);
   background-repeat: no-repeat;
-  background-position: 50% 25%;
+  background-position: 50% 78px;
   background-color: #83B3D31F;
 }
 
@@ -327,6 +326,7 @@ body {
   text-transform: uppercase;
   color: #000000;
   margin: 182px 85px 0;
+  overflow-wrap: break-word;
 }
 
 .productions p {
@@ -336,6 +336,7 @@ body {
   line-height: 21px;
   text-align: center;
   margin: 30px 85px 0;
+  padding-bottom: 80px;
 }
 
 .question {
@@ -655,7 +656,7 @@ body {
 
 .control-input[type="checkbox"]:checked+.control-mark::before,
 .control-input[type="checkbox"]:checked+.control-mark::after {
-  background: url(../images/input-arrow.svg) white no-repeat center;
+  background: url(../images/input_arrow.svg) white no-repeat center;
   position: absolute;
   left: 3.5px;
   top: 6px;
@@ -971,25 +972,25 @@ body {
 }
 
 .product-card:nth-child(1) .card-content {
-  background-image: url(../images/catalog/stars-4.svg);
+  background-image: url(../images/catalog/stars_4.svg);
   background-repeat: no-repeat;
   background-position: 0 100%;
 }
 
 .product-card:nth-child(2) .card-content {
-  background-image: url(../images/catalog/stars-4.svg);
+  background-image: url(../images/catalog/stars_4.svg);
   background-repeat: no-repeat;
   background-position: 0 100%;
 }
 
 .product-card:nth-child(3) .card-content {
-  background-image: url(../images/catalog/stars-3.svg);
+  background-image: url(../images/catalog/stars_3.svg);
   background-repeat: no-repeat;
   background-position: 0 100%;
 }
 
 .product-card:nth-child(4) .card-content {
-  background-image: url(../images/catalog/stars-2.svg);
+  background-image: url(../images/catalog/stars_2.svg);
   background-repeat: no-repeat;
   background-position: 0 100%;
 }
@@ -1262,7 +1263,7 @@ body {
 
 .tooltip-text:after {
   content: '';
-  background-image: url("../images/tooltip-arrow.svg");
+  background-image: url("../images/tooltip_arrow.svg");
   width: 19px;
   height: 9px;
   position: absolute;
@@ -1293,8 +1294,8 @@ body {
 
 .modal-window-content {
   background-color: white;
-  width: 580px;
-  height: 445px;
+  max-width: 580px;
+  min-height: 445px;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -1310,7 +1311,7 @@ body {
 
 .close-modal-window {
   position: fixed;
-  right: 7%;
+  right: 53px;
   width: 52px;
   height: 52px;
   border-radius: 50%;
