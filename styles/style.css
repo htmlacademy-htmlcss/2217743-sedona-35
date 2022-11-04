@@ -44,6 +44,7 @@ body {
   display: flex;
   position: relative;
   flex-wrap: wrap;
+  align-items: flex-start;
   margin: 0 70px;
   margin-bottom: -10px;
 }
@@ -54,8 +55,9 @@ body {
 
 .navigation-list {
   display: flex;
+  flex-wrap: wrap;
   height: 100%;
-  max-width: 350px;
+  max-width: 550px;
   margin: 0 0 0 28px;
   padding: 0;
   justify-content: space-between;
@@ -85,6 +87,7 @@ body {
   position: relative;
   margin: auto;
   padding: 18px 16px 22px;
+  max-width: 140px;
 }
 
 .navigation-user {
@@ -116,6 +119,7 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+  overflow-wrap: break-word;
 }
 
 .navigation-link:focus path,
@@ -155,8 +159,7 @@ body {
 
 .navigation-btn {
   font-family: 'PT Sans', sans-serif;
-  padding: 8px 34px;
-  margin: auto 0;
+  margin: 14px 0;
   border-radius: 4px;
   font-weight: 700;
   font-size: 16px;
@@ -167,7 +170,8 @@ body {
   border: none;
   text-align: center;
   margin-bottom: 24px;
-  max-width: 160px;
+  width: 160px;
+  min-height: 36px;
 }
 
 .navigation-btn:hover {
