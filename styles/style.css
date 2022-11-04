@@ -710,6 +710,7 @@ body {
 .catalog-filter-buttons {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .control-before {
@@ -809,7 +810,7 @@ body {
 
 .accept-button {
   font-family: 'PT Sans', sans-serif;
-  width: 190px;
+  min-width: 190px;
   min-height: 36px;
   background: #82B3D3;
   border-radius: 4px;
@@ -838,7 +839,7 @@ body {
 .cancel-button {
   font-family: 'PT Sans', sans-serif;
   text-transform: uppercase;
-  width: 190px;
+  min-width: 190px;
   min-height: 36px;
   font-weight: 700;
   font-size: 16px;
