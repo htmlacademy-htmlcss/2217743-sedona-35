@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Гостинницы</title>
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="icon" href="favicon.svg">
+    <link rel="icon" href="favicon.ico">
   </head>
 
   <body>
@@ -67,8 +67,8 @@
         </ul>
 
         <form action="https://echo.htmlacademy.ru" method="get" class="form-catalog">
+          <div class="catalog-filter-block">
           <fieldset class="catalog-filter">
-            <div class="catalog-filter-block">
               <legend class="catalog-filter-title">Инфраструктура:</legend>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
@@ -93,11 +93,11 @@
                   </label>
                 </li>
               </ul>
-            </div>
           </fieldset>
+        </div>
 
+        <div class="catalog-filter-block">
           <fieldset class="catalog-filter">
-            <div class="catalog-filter-block">
             <legend class="catalog-filter-title">Тип Жилья:</legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
@@ -122,11 +122,11 @@
                 </label>
               </li>
             </ul>
-          </div>
           </fieldset>
+          </div>
 
+          <div class="catalog-filter-price">
           <fieldset class="catalog-filter">
-            <div class="catalog-filter-price">
               <legend class="catalog-filter-title">
                 Стоимость, ₽:
               </legend>
@@ -156,8 +156,8 @@
                   </div>
                 </div>
               </div>
-            </div>
           </fieldset>
+        </div>
 
           <div class="catalog-filter-buttons">
             <button class="accept-button">Применить</button>

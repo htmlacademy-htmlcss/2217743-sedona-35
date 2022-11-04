@@ -574,12 +574,12 @@ body {
   border: none;
   margin: 0;
   padding: 0;
-  margin-right: 66px;
-  margin-top: 40px;
 }
 
 .catalog-filter-block {
   max-width: 150px;
+  margin-right: 66px;
+  margin-top: 40px;
 }
 
 .price-place {
@@ -591,6 +591,8 @@ body {
 .catalog-filter-price {
   margin-left: 80px;
   max-width: 290px;
+  margin-right: 66px;
+  margin-top: 40px;
 }
 
 .catalog-filter-title {
@@ -600,7 +602,7 @@ body {
   color: white;
   padding: 0;
   margin-bottom: 32px;
-  overflow-wrap: break-word;
+  overflow-wrap: anywhere;
 }
 
 .control {
