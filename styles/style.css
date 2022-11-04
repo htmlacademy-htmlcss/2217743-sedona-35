@@ -154,7 +154,7 @@ body {
 }
 
 .navigation-btn {
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   padding: 8px 34px;
   margin: auto 0;
   border-radius: 4px;
@@ -369,7 +369,7 @@ body {
 }
 
 .btn-modal-window {
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   background-color: #756157;
   border-radius: 4px;
   min-width: 376px;
@@ -462,7 +462,7 @@ body {
 }
 
 .button {
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   color: white;
   text-transform: uppercase;
   font-weight: 700;
@@ -544,7 +544,7 @@ body {
 }
 
 .breadcrumbs a {
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   color: white;
   text-decoration: none;
   font-weight: 400;
@@ -804,7 +804,7 @@ body {
 }
 
 .accept-button {
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   width: 190px;
   min-height: 36px;
   background: #82B3D3;
@@ -832,7 +832,7 @@ body {
 
 
 .cancel-button {
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   text-transform: uppercase;
   width: 190px;
   min-height: 36px;
@@ -916,7 +916,7 @@ body {
 }
 
 .select-control {
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   width: 292px;
   height: 50px;
   margin-right: 70px;
@@ -1030,7 +1030,7 @@ body {
 .favorites-button {
   min-width: 140px;
   min-height: 36px;
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   background: #82B3D3;
   border-radius: 4px;
   border: none;
