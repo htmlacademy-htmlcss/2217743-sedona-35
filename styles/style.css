@@ -148,7 +148,7 @@ body {
 
 .main-page {
   background-color: white;
-  background-image: url(../images/mainBackground.jpg);
+  background-image: url(../images/main_background.jpg);
   background-repeat: no-repeat;
   background-size: 100% auto;
 }
@@ -212,7 +212,7 @@ body {
 .features-item {
   max-width: 400px;
   background-color: #82B3D3;
-  background-image: url(../images/RectanglePng.png);
+  background-image: url(../images/rectangle_png.png);
   background-repeat: no-repeat;
   background-position: 50% 46%;
 }
@@ -248,8 +248,8 @@ body {
 
 .item-block {
   background-color: #83B3D31F;
-  background-image: url(../images/RectanglePngGrey.png);
-  background-position: 50% 50%;
+  background-image: url(../images/rectangle_png_grey.png);
+  background-position: 50% 49%;
   background-repeat: no-repeat;
   max-width: 400px;
 }
@@ -294,24 +294,26 @@ body {
 
 .productions-items li {
   min-width: 400px;
+  max-width: 400px;
   min-height: 384px;
 }
 
 .productions-living {
-  background-image: url(../images/mainHome.svg);
+  background-image: url(../images/main_home.svg);
   background-repeat: no-repeat;
   background-position: 50% 25%;
   background-color: #83B3D31F;
 }
 
 .productions-food {
+  background-color: white;
   background-image: url(../images/food.svg);
   background-repeat: no-repeat;
   background-position: 50% 25%;
 }
 
 .productions-souvenir {
-  background-image: url(../images/giftBox.svg);
+  background-image: url(../images/gift_box.svg);
   background-repeat: no-repeat;
   background-position: 50% 25%;
   background-color: #83B3D31F;
@@ -396,8 +398,10 @@ body {
 }
 
 .aside-main {
-  background-image: url(../images/Subscribe.jpg);
+  background-color: #83B3D3;
+  background-image: url(../images/subscribe.jpg);
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .form-subscribe input::placeholder {
@@ -507,6 +511,7 @@ body {
 }
 
 .selection-hotels {
+  background-color: #83B3D3;
   background-image: url(../images/catalog/filter.jpg);
   background-repeat: no-repeat;
   padding: 35px 70px 70px;
@@ -528,10 +533,9 @@ body {
   list-style: none;
   padding: 0;
   margin: 0;
-  background-image: url(../images/catalog/halfRow.svg);
+  background-image: url(../images/catalog/half_row.svg);
   background-repeat: no-repeat;
   background-position: 24px 5px;
-  margin-bottom: 40px;
 }
 
 .breadcrumbs li {
@@ -563,14 +567,19 @@ body {
 .form-catalog {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .catalog-filter {
   border: none;
   margin: 0;
   padding: 0;
-  margin-right: 70px;
+  margin-right: 66px;
+  margin-top: 40px;
+}
+
+.catalog-filter-block {
+  max-width: 150px;
 }
 
 .price-place {
@@ -581,6 +590,7 @@ body {
 
 .catalog-filter-price {
   margin-left: 80px;
+  max-width: 290px;
 }
 
 .catalog-filter-title {
@@ -590,6 +600,7 @@ body {
   color: white;
   padding: 0;
   margin-bottom: 32px;
+  overflow-wrap: break-word;
 }
 
 .control {
@@ -619,11 +630,15 @@ body {
 .control-mark {
   display: block;
   position: relative;
-  width: 20px;
+  min-width: 20px;
   height: 20px;
   background: #FFFFFF;
   border-radius: 4px;
   margin-right: 16px;
+}
+
+.control-label {
+  overflow-wrap: anywhere;
 }
 
 .control:hover .control-radio,
@@ -650,7 +665,7 @@ body {
 .control-radio {
   position: relative;
   display: block;
-  width: 20px;
+  min-width: 20px;
   height: 20px;
   background-color: white;
   border-radius: 50%;
@@ -769,7 +784,7 @@ body {
 }
 
 .toggle-max {
-  right: 0;
+  right: -4px;
   top: -8px;
 }
 
@@ -797,7 +812,7 @@ body {
   line-height: 20px;
   color: white;
   text-transform: uppercase;
-  margin-top: 56px;
+  margin-top: 95px;
 }
 
 
@@ -900,7 +915,7 @@ body {
 .select-control {
   font-family: 'PT Sans';
   width: 292px;
-  height: 44px;
+  height: 50px;
   margin-right: 70px;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
@@ -908,10 +923,10 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
-  padding: 0 14px;
+  padding: 0 19px;
   appearance: none;
-  background: url(../images/arrowSelect.svg) no-repeat right;
-  background-position-x: calc(100% - 14px);
+  background: url(../images/arrow_select.svg) no-repeat right;
+  background-position-x: calc(100% - 17px);
 }
 
 .select-control:hover {
@@ -927,7 +942,7 @@ body {
 }
 
 .hotels-result {
-  margin: 40px 70px;
+  margin: 38px 70px;
 }
 
 .product-list {
@@ -1002,6 +1017,7 @@ body {
   padding: 0;
   margin: 0;
   margin-bottom: 16px;
+  overflow-wrap: break-word;
 }
 
 .product-card-price {
@@ -1020,6 +1036,10 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
+}
+
+.favorites-button-current {
+  background: #7DB54F;
 }
 
 .tooltip-toggle:focus,
@@ -1082,7 +1102,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   padding: 0;
-  margin: 37px 70px 61px;
+  margin: 40px 70px 61px;
 }
 
 .pagination-item {
@@ -1134,6 +1154,7 @@ body {
 
 .aside-catalog {
   text-align: center;
+  background-color: white;
   background-image: none;
 }
 
