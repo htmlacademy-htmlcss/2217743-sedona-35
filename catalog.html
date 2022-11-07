@@ -140,7 +140,7 @@
                   </div>
                   <div class="price-min">
                     <label>
-                      <input type="text" value="9000" class="control-after" name="max-price">
+                      <input type="number" value="9000" class="control-after" name="max-price" min="1500">
                     </label>
                     <span class="placeholder">до</span>
                   </div>
@@ -264,7 +264,7 @@
           <p>Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
           <form action="https://echo.htmlacademy.ru" method="post" class="form-subscribe">
             <label for="mailing-post">
-              <input type="email" placeholder="Ваш e-mail" id="mailing-post" name="mailing-post">
+              <input type="email" placeholder="Ваш e-mail" id="mailing-post" name="mailing-post" required>
             </label>
             <button class="button" type="submit">Подписаться</button>
           </form>
