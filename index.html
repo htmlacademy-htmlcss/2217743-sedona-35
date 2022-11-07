@@ -121,7 +121,7 @@
           <p>Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
           <form action="https://echo.htmlacademy.ru" method="post" class="form-subscribe">
             <label for="mailing-post">
-              <input type="email" placeholder="Ваш e-mail" id="mailing-post" name="mailing-post">
+              <input type="email" placeholder="Ваш e-mail" id="mailing-post" name="mailing-post" required>
             </label>
             <button class="button" type="submit">Подписаться</button>
           </form>
@@ -186,12 +186,12 @@
         <form action="https://echo.htmlacademy.ru" method="post" class="modal-form">
           <p class="form-date">
             <label class="date-in" for="date-in">Дата Заезда:</label>
-            <input type="text" id="date-in" name="date-in" class="input-date" placeholder="27 апреля 2020">
+            <input type="text" id="date-in" name="date-in" class="input-date" placeholder="27 апреля 2020" required>
             <span class="verify-date-in">Мы не можем отправить вас в прошлое.</span>
           </p>
           <p class="form-date">
             <label class="date-out" for="date-out">Дата Выезда:</label>
-            <input type="text" id="date-out" name="date-out" class="input-date" placeholder="1 сентября 2023">
+            <input type="text" id="date-out" name="date-out" class="input-date" placeholder="1 сентября 2023" required>
             <span class="verify-date-out">На эти даты есть свободные номера. Пока есть.</span>
           </p>
           <div class="people-block">
@@ -201,7 +201,7 @@
                   xmlns="http://www.w3.org/2000/svg">
                   <path d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3" />
                 </svg></button>
-              <input class="range-set" type="number" id="set-adults" name="set-adults" value="1" min="1">
+              <input class="range-set" type="number" id="set-adults" name="set-adults" value="1" min="1" required>
               <button class="button-plus"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3" />
@@ -222,7 +222,7 @@
                   xmlns="http://www.w3.org/2000/svg">
                   <path d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3" />
                 </svg></button>
-              <input class="range-set" type="number" id="set-child" name="set-child" value="0" min="0">
+              <input class="range-set" type="number" id="set-child" name="set-child" value="0" min="0" required>
               <button class="button-plus"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3" />

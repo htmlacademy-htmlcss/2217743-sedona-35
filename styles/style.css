@@ -243,7 +243,7 @@ body {
 .features-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -288,7 +288,7 @@ body {
 
 .productions-items {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
   list-style: none;
   margin: 0;
